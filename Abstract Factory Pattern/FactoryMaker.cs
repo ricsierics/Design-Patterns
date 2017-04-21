@@ -13,14 +13,15 @@ namespace Abstract_Factory_Pattern
         {
             switch (choice)
             {
-                case "a":
+                case "1":
                     pf = new ConcreteFactory1();
                     break;
-                case "b":
+                case "2":
                     pf = new ConcreteFactory2();
                     break;
                 default:
-                    break;
+                    Console.WriteLine("Invalid choice. Please enter 1 or 2");
+                    throw new ArgumentOutOfRangeException("Invalid choice. Please enter 1 or 2");
             }
             return pf;
         }

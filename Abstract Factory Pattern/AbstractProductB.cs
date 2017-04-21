@@ -8,5 +8,7 @@ namespace Abstract_Factory_Pattern
 {
     public abstract class AbstractProductB
     {
+        public abstract void OperationB1();
+        public abstract void OperationB2();
     }
 }

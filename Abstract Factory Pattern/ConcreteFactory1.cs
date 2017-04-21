@@ -15,7 +15,7 @@ namespace Abstract_Factory_Pattern
 
         public override AbstractProductB CreateProductB()
         {
-            return new ProductB1();
+            return new ProductB1("Product B2");
         }
     }
 }
